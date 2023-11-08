@@ -4,14 +4,18 @@
         public $name;
         public $color;
 
-        // setters
-        function setName($name){
+        function __construct($name,$color) {
             $this->name = $name;
-        }
-
-        function setColor($color){
             $this->color = $color;
         }
+        // setters
+        // function setName($name){
+        //     $this->name = $name;
+        // }
+
+        // function setColor($color){
+        //     $this->color = $color;
+        // }
 
         // getters
         function getName(){
@@ -23,10 +27,10 @@
         }
     }
 
-    $akondro = new Fruits();
-    $paiso = new Fruits();
+    $akondro = new Fruits('Akondro');
+    $paiso = new Fruits('Paiso');
 
-    $akondro->setName('Akondro');
-    $paiso->setName('Paiso');
+    // $akondro->setName('Akondro');
+    // $paiso->setName('Paiso');
 
     echo "This name is ".$akondro->getName();
